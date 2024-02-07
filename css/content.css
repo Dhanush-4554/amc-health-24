@@ -1,0 +1,49 @@
+.list-items-mine{
+    margin: 20px;
+    font-size: 2em;
+    background-color: #007bff;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 7px;
+    text-align: center;
+
+}
+.list-items-mine:hover{
+    background-color: blue;
+    border: 0.2px solid black;
+    cursor: pointer;
+}
+
+
+.list-items-mine > p{
+    color: white;
+}
+
+.List{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+@media(max-width: 750px){
+    .List{
+        padding: 30px;
+    }
+}
+@media(max-width: 550px){
+    .List{
+        padding: 10px;
+    }
+    .list-items-mine > p{
+        font-size: 20px
+    }
+}
+@media(max-width: 350px){
+    .List{
+        padding: 0px;
+    }
+    .list-items-mine > p{
+        font-size: 15px
+    }
+}
